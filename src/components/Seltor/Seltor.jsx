@@ -1,9 +1,11 @@
 // import React from "react";
 
+import { NavLink } from "react-router-dom";
+
 export const Seltor = (props) => {
   return (
     <select>
-      <option>name</option>
+      <option><NavLink to={'/'} >men</NavLink></option>
     </select>
   );
 };

@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import "./App.css";
-import "boxicons";
-import { Card } from "./components/Card/Card";
+import './App.css';
+import 'boxicons';
+import { Card } from './components/Card/Card';
+import { Seltor } from './components/Seltor/Seltor';
 
 function App() {
   const [filter, setFilter] = useState(true);
@@ -10,7 +11,7 @@ function App() {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
       .then((json) => setProductList(json));
   }, []);
@@ -25,7 +26,7 @@ function App() {
       <div>
         <div className='head'>
           <div>
-            <img src='/img/Vector.png' height={"25px"} />
+            <img src='/img/Vector.png' height={'25px'} />
           </div>
           <div className='head-logo'>
             <h2>LOGO</h2>
@@ -65,19 +66,22 @@ function App() {
           <div className='filter-button head-profile'>
             <h5>69420 ITEMS</h5>
             <button onClick={filterUpdate}>
-              {filter ? "< hide filter" : "> show filter"}
+              {filter ? '< hide filter' : '> show filter'}
             </button>
           </div>
-          <div className='head-profile'>
-            <h5>RECOMMENDED</h5>
-            <box-icon name='chevron-down'></box-icon>
+          <div>
+            <div className='head-profile'>
+              RECOMMENDED
+              <box-icon name='chevron-down'></box-icon>
+            </div>
+            <Seltor />
           </div>
         </div>
         <hr />
         <div className='product'>
           {filter && (
             <div className='product-filter'>
-              <div className="align">
+              <div className='align'>
                 <input type='checkbox' id='cust' />
                 <label htmlFor='cust'>Customizble</label>
               </div>
@@ -87,6 +91,30 @@ function App() {
             {productList.map((product) => {
               return <Card product={product} key={product.id} />;
             })}
+          </div>
+        </div>
+        <div className='footer'>
+          <div className='footer-contact' >
+            <div>
+              <h2>Be the first to know</h2>
+              <p>Sign up for updates from mettā muse.</p>
+              <div>
+                i<input placeholder='Enter your e-mail...' className='input' />
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+            <div>
+            <h2>CONTACT US</h2>
+            <p>+44 221 133 5360</p>
+            <p>customercare@mettamuse.com</p>
+            <h2>CURRENCY</h2>
+            <p>Transactions will be completed in Euros and a currency reference is available on hover.</p>
+            </div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>

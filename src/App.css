@@ -70,7 +70,11 @@
 
 .product{
   display: flex;
+  /* display: inline-flex; */
   flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .product-list{
@@ -80,11 +84,24 @@
 
 .product-filter{
   padding: 10px;
-  width: 50vw;
+  width: 170px;
+  margin: 10px;
+  border-radius: 9px;
   border: 1px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .align{
   display: flex;
   gap: 5px;
+  /* width: 170px; */
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+.footer-contact{
+  display: flex;
 }

@@ -94,7 +94,7 @@ function App() {
           </div>
         </div>
         <div className='footer'>
-          <div className='footer-contact' >
+          <div className='footer-contact'>
             <div>
               <h2>Be the first to know</h2>
               <p>Sign up for updates from mettā muse.</p>
@@ -104,16 +104,37 @@ function App() {
               </div>
             </div>
             <div>
-            <h2>CONTACT US</h2>
-            <p>+44 221 133 5360</p>
-            <p>customercare@mettamuse.com</p>
-            <h2>CURRENCY</h2>
-            <p>Transactions will be completed in Euros and a currency reference is available on hover.</p>
+              <h2>CONTACT US</h2>
+              <p>+44 221 133 5360</p>
+              <p>customercare@mettamuse.com</p>
+              <h2>CURRENCY</h2>
+              <p>
+                Transactions will be completed in Euros and a currency reference
+                is available on hover.
+              </p>
             </div>
           </div>
+          <hr className='div' />
           <div>
-            <div></div>
-            <div></div>
+            <div>
+              <h2>mettā muse</h2>
+              <p>About Us</p>
+              <p>Stories</p>
+              <p>Artisans</p>
+              <p>Boutiques</p>
+              <p>Contact Us</p>
+              <p>EU Compliances Docs</p>
+            </div>
+            <div>
+              <h2>QUICK LINKS</h2>
+              <p>Orders & Shipping</p>
+              <p>Join/Login as a Seller</p>
+              <p>Payment & Pricing</p>
+              <p>Return & Refunds</p>
+              <p>FAQs</p>
+              <p>Privacy Policy</p>
+              <p>Terms & Conditions</p>
+            </div>
             <div></div>
           </div>
         </div>

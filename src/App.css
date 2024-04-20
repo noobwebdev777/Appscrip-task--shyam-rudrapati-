@@ -1,0 +1,90 @@
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.head-logo{
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: bold ;
+}
+
+.head-input{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.head-input > *{
+  margin: 2px;
+}
+
+.head-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-info{
+  display: flex;
+  justify-content: center;
+  gap: 10px ;
+  padding: 20px 0px;
+}
+
+.moto{
+  text-align: center;
+  padding: 20px;
+}
+
+.moto > h1{
+  margin-top: 8px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+}
+
+.moto > *{
+  margin-bottom: 10px;
+}
+
+.main{
+  margin: 0px 80px;
+}
+
+.main-menu{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-button > button{
+  background-color: white;
+  border: 0;
+  padding-left: 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.product{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-filter{
+  padding: 10px;
+  width: 50vw;
+  border: 1px solid black;
+}
+
+.align{
+  display: flex;
+  gap: 5px;
+}

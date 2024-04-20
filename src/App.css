@@ -50,7 +50,7 @@
 }
 
 .main{
-  margin: 0px 80px;
+  margin: 0px 60px;
 }
 
 .main-menu{
@@ -108,4 +108,8 @@
 
 .div{
   color: white;
+}
+
+.logo{
+  display: flex;
 }

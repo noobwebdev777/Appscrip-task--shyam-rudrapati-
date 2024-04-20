@@ -115,7 +115,7 @@ function App() {
             </div>
           </div>
           <hr className='div' />
-          <div>
+          <div className='logo' >
             <div>
               <h2>mettā muse</h2>
               <p>About Us</p>
@@ -135,7 +135,9 @@ function App() {
               <p>Privacy Policy</p>
               <p>Terms & Conditions</p>
             </div>
-            <div></div>
+            <div>
+              <img src='/img/Frame 136278.png' />
+            </div>
           </div>
         </div>
       </div>

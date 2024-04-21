@@ -1,11 +1,15 @@
 // import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 export const Seltor = (props) => {
+  // const {list} = props
+  console.log(props);
   return (
     <select>
-      <option><NavLink to={'/'} >men</NavLink></option>
+      {/* {list.map((val) => {
+        return <option key={val.id} value={val.value}>{val.name}</option>;
+      })} */}
     </select>
   );
 };

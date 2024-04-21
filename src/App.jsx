@@ -5,6 +5,12 @@ import 'boxicons';
 import { Card } from './components/Card/Card';
 import { Seltor } from './components/Seltor/Seltor';
 
+const idealList = [
+  { id: 1, name: 'Male', value: 'male' },
+  { id: 2, name: 'Women', value: 'women' },
+  { id: 3, name: 'Baby&Kids', value: 'baby&kids' },
+];
+
 function App() {
   const [filter, setFilter] = useState(true);
 
@@ -85,6 +91,10 @@ function App() {
                 <input type='checkbox' id='cust' />
                 <label htmlFor='cust'>Customizble</label>
               </div>
+              <hr />
+              <div className='ideal-for'>
+                <Seltor list={idealList} />
+              </div>
             </div>
           )}
           <div className='product-list'>
@@ -93,51 +103,54 @@ function App() {
             })}
           </div>
         </div>
-        <div className='footer'>
-          <div className='footer-contact'>
+      </div>
+      <div className='footer'>
+        <div className='footer-contact'>
+          <div>
+            <h3>Be the first to know</h3>
+            <p>Sign up for updates from mettā muse.</p>
             <div>
-              <h2>Be the first to know</h2>
-              <p>Sign up for updates from mettā muse.</p>
-              <div>
-                i<input placeholder='Enter your e-mail...' className='input' />
-                <button>SUBSCRIBE</button>
-              </div>
-            </div>
-            <div>
-              <h2>CONTACT US</h2>
-              <p>+44 221 133 5360</p>
-              <p>customercare@mettamuse.com</p>
-              <h2>CURRENCY</h2>
-              <p>
-                Transactions will be completed in Euros and a currency reference
-                is available on hover.
-              </p>
+              <input placeholder='Enter your e-mail...' className='input' />
+              <button className='butt'>SUBSCRIBE</button>
             </div>
           </div>
-          <hr className='div' />
-          <div className='logo' >
-            <div>
-              <h2>mettā muse</h2>
-              <p>About Us</p>
-              <p>Stories</p>
-              <p>Artisans</p>
-              <p>Boutiques</p>
-              <p>Contact Us</p>
-              <p>EU Compliances Docs</p>
-            </div>
-            <div>
-              <h2>QUICK LINKS</h2>
-              <p>Orders & Shipping</p>
-              <p>Join/Login as a Seller</p>
-              <p>Payment & Pricing</p>
-              <p>Return & Refunds</p>
-              <p>FAQs</p>
-              <p>Privacy Policy</p>
-              <p>Terms & Conditions</p>
-            </div>
-            <div>
-              <img src='/img/Frame 136278.png' />
-            </div>
+          <div>
+            <h3>CONTACT US</h3>
+            <p>+44 221 133 5360</p>
+            <p>customercare@mettamuse.com</p>
+            <h3>CURRENCY</h3>
+            <p>
+              Transactions will be completed in Euros and a currency reference
+              is available on hover.
+            </p>
+          </div>
+        </div>
+        <hr className='div' />
+        <div className='logo'>
+          <div>
+            <h3>mettā muse</h3>
+            <p>About Us</p>
+            <p>Stories</p>
+            <p>Artisans</p>
+            <p>Boutiques</p>
+            <p>Contact Us</p>
+            <p>EU Compliances Docs</p>
+          </div>
+          <div>
+            <h3>QUICK LINKS</h3>
+            <p>Orders & Shipping</p>
+            <p>Join/Login as a Seller</p>
+            <p>Payment & Pricing</p>
+            <p>Return & Refunds</p>
+            <p>FAQs</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+          <div>
+            <h3>FOLLOW US</h3>
+            <img src='/img/insta.png' width={'80px'} />
+            <h3>mettā muse Accepts</h3>
+            <img src='/img/Frame 136278.png' width={'250px'} />
           </div>
         </div>
       </div>

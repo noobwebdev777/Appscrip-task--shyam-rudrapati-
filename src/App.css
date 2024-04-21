@@ -83,8 +83,7 @@
 }
 
 .product-filter{
-  padding: 10px;
-  width: 170px;
+  /* width: 170px; */
   margin: 10px;
   border-radius: 9px;
   border: 1px solid black;
@@ -94,16 +93,19 @@
 .align{
   display: flex;
   gap: 5px;
+  padding: 10px;
   /* width: 170px; */
 }
 
 .footer{
   background-color: black;
   color: white;
+  padding: 20px 40px;
 }
 
 .footer-contact{
   display: flex;
+  padding: 20px;
 }
 
 .div{
@@ -112,4 +114,29 @@
 
 .logo{
   display: flex;
+}
+
+.logo > div{
+  padding: 10px;
+}
+
+.footer-contact > p,.logo > p{
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.input{
+  width: 250px;
+  padding: 10px;
+  border: 0;
+  margin: 5px;
+}
+
+.butt{
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  border: 1px solid gray ;
+  border-radius: 8px;
+  color: gray;
 }

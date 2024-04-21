@@ -151,6 +151,10 @@
   align-content: center;
 }
 
+.tool{
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   .product{
     flex-direction: column;

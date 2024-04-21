@@ -175,6 +175,7 @@ function App() {
             <img src='../img/Frame 136278.png' width={'250px'} alt='payments' />
           </div>
         </div>
+        <p className='tool'>Copyright © 2023 mettamuse. All rights reserved.</p>
       </div>
     </>
   );

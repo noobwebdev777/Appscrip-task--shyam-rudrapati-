@@ -148,9 +148,9 @@ function App() {
           </div>
           <div>
             <h3>FOLLOW US</h3>
-            <img src='/img/insta.png' width={'80px'} />
+            <img src='../img/insta.png' width={'80px'} />
             <h3>mettā muse Accepts</h3>
-            <img src='/img/Frame 136278.png' width={'250px'} />
+            <img src='../img/Frame 136278.png' width={'250px'} />
           </div>
         </div>
       </div>

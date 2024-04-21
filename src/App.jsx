@@ -11,6 +11,25 @@ const idealList = [
   { id: 3, name: 'Baby&Kids', value: 'baby&kids' },
 ];
 
+const occasion = [
+  { id: 1, name: 'festivl', value: 'festiv' },
+  { id: 2, name: 'casual', value: 'casual' },
+  // {id: 3, name: 'trad', value: 'trad'}
+];
+
+const work = [
+  { id: 1, name: 'office', value: 'office' },
+  { id: 2, name: 'meeting', value: 'meeting' },
+];
+
+const rcom = [
+  { id: 1, name: 'RECOMMENDED', value: 'RECOMMENDED' },
+  { id: 2, name: 'NEWEST FIRST', value: 'NEWEST FIRST' },
+  { id: 3, name: 'POPULAR', value: 'POPULAR' },
+  { id: 4, name: 'PRICE:HIGH TO LOW', value: 'PRICE:HIGH to LOW' },
+  { id: 5, name: 'PRICE:LOW TO HIGH', value: 'PRICE:LOW TO HIGH' },
+];
+
 function App() {
   const [filter, setFilter] = useState(true);
 
@@ -77,10 +96,9 @@ function App() {
           </div>
           <div>
             <div className='head-profile'>
-              RECOMMENDED
+              <Seltor list={rcom} title='RECOMMENDED' />
               <box-icon name='chevron-down'></box-icon>
             </div>
-            <Seltor />
           </div>
         </div>
         <hr />
@@ -93,8 +111,12 @@ function App() {
               </div>
               <hr />
               <div className='ideal-for'>
-                <Seltor list={idealList} />
+                <Seltor list={idealList} title='IDEAL FOR' />
               </div>
+              <hr />
+              <Seltor list={occasion} title='OCCASION' />
+              <hr />
+              <Seltor list={work} title='WORK' />
             </div>
           )}
           <div className='product-list'>
@@ -148,9 +170,9 @@ function App() {
           </div>
           <div>
             <h3>FOLLOW US</h3>
-            <img src='../img/insta.png' width={'80px'} />
+            <img src='../img/insta.png' width={'80px'} alt='socials' />
             <h3>mettā muse Accepts</h3>
-            <img src='../img/Frame 136278.png' width={'250px'} />
+            <img src='../img/Frame 136278.png' width={'250px'} alt='payments' />
           </div>
         </div>
       </div>
